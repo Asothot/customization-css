@@ -1,0 +1,209 @@
+/* Css Querys para que se puedan ver mejor */
+
+/* Tipp de comportamiento del texto en la tabla*/
+.whitespace-nowrap {
+    white-space: initial;
+    min-width: 170px;
+
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  margin-left: 0px;
+}
+
+/* Este es el conteneor completo de la tabla */
+.overflow-x-auto {
+  min-width:         1100px;
+  margin-left:       -170px;
+}
+
+/* Este es la parte superior del titulo */
+th {
+    font-size:              18px;
+    font-weight:            500;
+    background-color:       var(--ls-secondary-background-color);
+    text-transform:         capitalize;
+    padding:                10px 8px;
+}
+
+th .mr-1 {
+    color:                  var(--ls-link-text-color-amarillo);
+}
+
+
+/** CSS de la comunidad que comprime la parte superior de opciones */
+
+.custom-query-title {
+  display: flex;
+}
+.custom-query .color-level, .custom-query .table-auto {
+  margin-top: 5px;
+}
+.custom-query .flex.flex-row.align-items.mt-2 {
+  justify-content: flex-end;
+  margin-top: -1.4em;
+  position: relative;
+  z-index: 1;
+}
+
+/**** STATUS CSS ****/
+
+/****** To Watch **** ****/
+
+.page-reference[data-ref^='to watch'] .page-ref,
+.page-ref[data-ref^='to watch'] {
+    background-color:   #E90000;
+    color:              #fff!important;
+    padding:            1px 10px 1px 0px;
+    border-radius:      5px;
+}
+
+.recent-item[data-ref^='to watch'] a,
+.favorite-item[data-ref='To Watch'] a,
+.title[data-ref^='to watch'] {
+  color:                  #transparent;
+}
+
+.recent-item[data-ref^='to watch'],
+.favorite-item[data-ref='To Watch'] {
+  position: relative;
+}
+.recent-item[data-ref^='to watch'] .page-icon,
+.favorite-item[data-ref='To Watch'] .page-icon {
+  visibility: hidden;
+}
+
+.page-reference[data-ref^='to watch'] .page-ref:before,
+.page-ref[data-ref^='to watch']:before {
+  content:                '🟥 ';
+  margin-right:            8px;
+  border:                  1px solid #fff;
+  border-radius:           4px 0px 0px 4px;
+}
+
+.recent-item[data-ref^='to watch']:before,
+.favorite-item[data-ref='To Watch']:before {
+    content:                '🟥'!important;
+    margin-right:           2px;
+    font-size:              14px;
+}
+
+.title[data-ref^='to watch']:before {
+    content:                '🟥 '!important;
+    margin-right:           2px;
+}
+
+.recent-item[data-ref^='to watch']:before,
+.favorite-item[data-ref='To Watch']:before {
+  position: absolute;
+  left: 20px;
+  top: 3px;
+}
+
+/****** Watching **** ****/
+
+.page-reference[data-ref='watching'] .page-ref,
+.page-ref[data-ref='watching'] {
+    background-color:   #FF8B00;
+    color:              #fff!important;
+    padding:            1px 10px 1px 0px;
+    border-radius:      5px;
+}
+
+.recent-item[data-ref='watching'] a,
+.favorite-item[data-ref='Watching'] a,
+.title[data-ref='watching'] {
+  color:                  #transparent;
+}
+
+.recent-item[data-ref='watching'],
+.favorite-item[data-ref='Watching'] {
+  position: relative;
+}
+.recent-item[data-ref='watching'] .page-icon,
+.favorite-item[data-ref='Watching'] .page-icon {
+  visibility: hidden;
+}
+
+.page-reference[data-ref='watching'] .page-ref:before,
+.page-ref[data-ref='watching']:before {
+  content:                '🟧 ';
+  margin-right:            8px;
+  border:                  1px solid #fff;
+  border-radius:           4px 0px 0px 4px;
+}
+
+.recent-item[data-ref='watching']:before,
+.favorite-item[data-ref='Watching']:before {
+    content:                '🟧'!important;
+    margin-right:           2px;
+    font-size:              14px;
+}
+
+.title[data-ref='watching']:before {
+    content:                '🟧 '!important;
+    margin-right:           2px;
+}
+
+.recent-item[data-ref='watching']:before,
+.favorite-item[data-ref='Watching']:before {
+  position: absolute;
+  left: 20px;
+  top: 3px;
+}
+
+/****** Watched **** ****/
+
+.page-reference[data-ref='watched'] .page-ref,
+.page-ref[data-ref='watched'] {
+    background-color:   #00BF00;
+    color:              #fff!important;
+    padding:            1px 10px 1px 0px;
+    border-radius:      5px;
+}
+
+.recent-item[data-ref='watched'] a,
+.favorite-item[data-ref='Watched'] a,
+.title[data-ref='watched'] {
+  color:                  #transparent;
+}
+
+.recent-item[data-ref='watched'],
+.favorite-item[data-ref='Watched'] {
+  position: relative;
+}
+.recent-item[data-ref='watched'] .page-icon,
+.favorite-item[data-ref='Watched'] .page-icon {
+  visibility: hidden;
+}
+
+.page-reference[data-ref='watched'] .page-ref:before,
+.page-ref[data-ref='watched']:before {
+  content:                '🟩 ';
+  margin-right:            8px;
+  border:                  1px solid #fff;
+  border-radius:           4px 0px 0px 4px;
+}
+
+.recent-item[data-ref='watched']:before,
+.favorite-item[data-ref='Watched']:before {
+    content:                '🟩'!important;
+    margin-right:           2px;
+    font-size:              14px;
+}
+
+.title[data-ref='watched']:before {
+    content:                '🟩 '!important;
+    margin-right:           2px;
+}
+
+.recent-item[data-ref='watched']:before,
+.favorite-item[data-ref='Watched']:before {
+  position: absolute;
+  left: 20px;
+  top: 3px;
+}
+
