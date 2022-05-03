@@ -1,0 +1,260 @@
+/* Css Querys para que se puedan ver mejor */
+
+/* Tipp de comportamiento del texto en la tabla*/
+.whitespace-nowrap {
+    white-space: initial;
+    min-width: 170px;
+
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  margin-left: 0px;
+}
+
+/* Este es el conteneor completo de la tabla */
+.overflow-x-auto {
+  min-width:         1100px;
+  margin-left:       -170px;
+}
+
+/* Este es la parte superior del titulo */
+th {
+    font-size:              18px;
+    font-weight:            500;
+    background-color:       var(--ls-secondary-background-color);
+    text-transform:         capitalize;
+    padding:                10px 8px;
+}
+
+th .mr-1 {
+    color:                  var(--ls-link-text-color-amarillo);
+}
+
+
+/** CSS de la comunidad que comprime la parte superior de opciones */
+
+.custom-query-title {
+  display: flex;
+}
+.custom-query .color-level, .custom-query .table-auto {
+  margin-top: 5px;
+}
+.custom-query .flex.flex-row.align-items.mt-2 {
+  justify-content: flex-end;
+  margin-top: -1.4em;
+  position: relative;
+  z-index: 1;
+}
+
+/**** STATUS CSS ****/
+
+/****** Para Leer **** ****/
+
+.page-reference[data-ref^='to read'] .page-ref,
+.page-ref[data-ref^='to read'] {
+    background-color:   #E90000;
+    color:              #fff!important;
+    padding:            1px 10px 1px 0px;
+    border-radius:      5px;
+}
+
+.recent-item[data-ref^='to read'] a,
+.favorite-item[data-ref='To Read'] a,
+.title[data-ref^='to read'] {
+  color:                  #transparent;
+}
+
+.recent-item[data-ref^='to read'],
+.favorite-item[data-ref='To Read'] {
+  position: relative;
+}
+.recent-item[data-ref^='to read'] .page-icon,
+.favorite-item[data-ref='to readPara Leer'] .page-icon {
+  visibility: hidden;
+}
+
+.page-reference[data-ref^='to read'] .page-ref:before,
+.page-ref[data-ref^='to read']:before {
+  content:                '🟥 ';
+  margin-right:            8px;
+  border:                  1px solid #fff;
+  border-radius:           4px 0px 0px 4px;
+}
+
+.recent-item[data-ref^='to read']:before,
+.favorite-item[data-ref='To Read']:before {
+    content:                '🟥'!important;
+    margin-right:           2px;
+    font-size:              14px;
+}
+
+.title[data-ref^='to read']:before {
+    content:                '🟥 '!important;
+    margin-right:           2px;
+}
+
+.recent-item[data-ref^='to read']:before,
+.favorite-item[data-ref='To Read']:before {
+  position: absolute;
+  left: 20px;
+  top: 3px;
+}
+
+/****** Leyendo **** ****/
+
+.page-reference[data-ref='reading'] .page-ref,
+.page-ref[data-ref='reading'] {
+    background-color:   #FF8B00;
+    color:              #fff!important;
+    padding:            1px 10px 1px 0px;
+    border-radius:      5px;
+}
+
+.recent-item[data-ref='reading'] a,
+.favorite-item[data-ref='Reading'] a,
+.title[data-ref='reading'] {
+  color:                  #transparent;
+}
+
+.recent-item[data-ref='reading'],
+.favorite-item[data-ref='Reading'] {
+  position: relative;
+}
+.recent-item[data-ref='reading'] .page-icon,
+.favorite-item[data-ref='Reading'] .page-icon {
+  visibility: hidden;
+}
+
+.page-reference[data-ref='reading'] .page-ref:before,
+.page-ref[data-ref='reading']:before {
+  content:                '🟧 ';
+  margin-right:            8px;
+  border:                  1px solid #fff;
+  border-radius:           4px 0px 0px 4px;
+}
+
+.recent-item[data-ref='reading']:before,
+.favorite-item[data-ref='Reading']:before {
+    content:                '🟧'!important;
+    margin-right:           2px;
+    font-size:              14px;
+}
+
+.title[data-ref='reading']:before {
+    content:                '🟧 '!important;
+    margin-right:           2px;
+}
+
+.recent-item[data-ref='reading']:before,
+.favorite-item[data-ref='Reading']:before {
+  position: absolute;
+  left: 20px;
+  top: 3px;
+}
+
+/****** Finished **** ****/
+
+.page-reference[data-ref='finished'] .page-ref,
+.page-ref[data-ref='finished'] {
+    background-color:   #00BF00;
+    color:              #fff!important;
+    padding:            1px 10px 1px 0px;
+    border-radius:      5px;
+}
+
+.recent-item[data-ref='finished'] a,
+.favorite-item[data-ref='Finished'] a,
+.title[data-ref='finished'] {
+  color:                  #transparent;
+}
+
+.recent-item[data-ref='finished'],
+.favorite-item[data-ref='Finished'] {
+  position: relative;
+}
+.recent-item[data-ref='finished'] .page-icon,
+.favorite-item[data-ref='Finished'] .page-icon {
+  visibility: hidden;
+}
+
+.page-reference[data-ref='finished'] .page-ref:before,
+.page-ref[data-ref='finished']:before {
+  content:                '🟩 ';
+  margin-right:            8px;
+  border:                  1px solid #fff;
+  border-radius:           4px 0px 0px 4px;
+}
+
+.recent-item[data-ref='finished']:before,
+.favorite-item[data-ref='Finished']:before {
+    content:                '🟩'!important;
+    margin-right:           2px;
+    font-size:              14px;
+}
+
+.title[data-ref='finished']:before {
+    content:                '🟩 '!important;
+    margin-right:           2px;
+}
+
+.recent-item[data-ref='finished']:before,
+.favorite-item[data-ref='Finished']:before {
+  position: absolute;
+  left: 20px;
+  top: 3px;
+}
+
+/****** Studying **** ****/
+
+.page-reference[data-ref='studying'] .page-ref,
+.page-ref[data-ref='studying'] {
+    background-color:   #0066FC;
+    color:              #fff!important;
+    padding:            1px 10px 1px 0px;
+    border-radius:      5px;
+}
+
+.recent-item[data-ref='studying'] a,
+.favorite-item[data-ref='Studying'] a,
+.title[data-ref='studying'] {
+  color:                  #transparent;
+}
+
+.recent-item[data-ref='studying'],
+.favorite-item[data-ref='Studying'] {
+  position: relative;
+}
+.recent-item[data-ref='studying'] .page-icon,
+.favorite-item[data-ref='Studying'] .page-icon {
+  visibility: hidden;
+}
+
+.page-reference[data-ref='studying'] .page-ref:before,
+.page-ref[data-ref='studying']:before {
+  content:                '🟦 ';
+  margin-right:            8px;
+  border:                  1px solid #fff;
+  border-radius:           4px 0px 0px 4px;
+}
+
+.recent-item[data-ref='studying']:before,
+.favorite-item[data-ref='Studying']:before {
+    content:                '🟦'!important;
+    margin-right:           2px;
+    font-size:              14px;
+}
+
+.title[data-ref='studying']:before {
+    content:                '🟦 '!important;
+    margin-right:           2px;
+}
+
+.recent-item[data-ref='studying']:before,
+.favorite-item[data-ref='Studying']:before {
+  position: absolute;
+  left: 20px;
+  top: 3px;
+}
