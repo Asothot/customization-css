@@ -1,5 +1,3 @@
-/* Css Querys para que se puedan ver mejor */
-
 /* Tipp de comportamiento del texto en la tabla*/
 .whitespace-nowrap {
     white-space: initial;
@@ -16,8 +14,8 @@ table {
 
 /* Este es el conteneor completo de la tabla */
 .overflow-x-auto {
-  min-width:         100px;
-  margin-left:       -150px;
+  min-width:         1000px;
+  margin-left:       -0px;
 }
 
 /* Este es la parte superior del titulo */
@@ -206,4 +204,3 @@ th .mr-1 {
   left: 20px;
   top: 3px;
 }
-
