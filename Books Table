@@ -51,7 +51,7 @@ th .mr-1 {
 
 /**** STATUS CSS ****/
 
-/****** Para Leer **** ****/
+/****** To read  **** ****/
 
 .page-reference[data-ref^='to read'] .page-ref,
 .page-ref[data-ref^='to read'] {
@@ -103,7 +103,7 @@ th .mr-1 {
   top: 3px;
 }
 
-/****** Leyendo **** ****/
+/****** Reading **** ****/
 
 .page-reference[data-ref='reading'] .page-ref,
 .page-ref[data-ref='reading'] {
