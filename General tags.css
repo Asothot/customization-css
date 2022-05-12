@@ -1,0 +1,16 @@
+a.tag[data-ref] {
+    color: rgb(243, 237, 237);
+    background: rgb(136, 24, 102);
+    border-radius: 0.5rem 0rem;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    line-height: 0.75rem;
+    padding: 2px 5px 2px 5px;
+    transition:relative;
+    white-space: nowrap;
+  }
+  a.tag[data-ref] {
+    display: none;
+  }
+ 
