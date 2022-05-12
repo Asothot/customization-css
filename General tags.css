@@ -9,8 +9,5 @@ a.tag[data-ref] {
     padding: 2px 5px 2px 5px;
     transition:relative;
     white-space: nowrap;
-  }
-  a.tag[data-ref] {
-    display: none;
-  }
+}
  
