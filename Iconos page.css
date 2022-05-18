@@ -1,0 +1,16 @@
+/* Modificar las medidas decuardo a las necesidades*/
+
+a[data-ref="notas"]::before {
+    content: "📓";
+    width: 1em;
+    display: inline-block;
+    margin-right: 0.2em;
+}
+
+a[data-ref="permanent notes"]::before {
+    content: "🧠";
+    width: 1em;
+    display: inline-block;
+    margin-right: 0.2em;
+    margin-right: 0.5em; /* agregar margin-right si el nombre de la pagina es largo */
+}
